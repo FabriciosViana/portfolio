@@ -1,0 +1,44 @@
+@import "./pages/variables"
+@import "./mixins"
+@import "./pages/header"
+@import "./pages/home/home"
+@import "./pages/about/about"
+@import "./pages/skills/skills"
+@import "./pages/projects/projects"
+@import "./pages/contacts/contacts"
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+    scroll-padding-top: 90px
+body
+    font-family: $font-tittle
+    background: $bg-color
+
+#ponto
+    @include gradient-font($primary-color)
+    font-size: 4rem
+.tittle
+    text-align: center
+    font-weight: 400
+    font-size: 2.5rem
+    color: $text-color
+
+
+
+[data-anime]
+    opacity: 0
+    transition: .3s
+
+[data-anime="left"]
+    transform: translate3d(-50px, 0, 0)
+
+[data-anime="right"]
+    transform: translate3d(50px, 0, 0)
+    
+[data-anime].animate
+    opacity: 1
+    transform: translate3d(0px, 0px, 0px)

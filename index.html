@@ -1,24 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>Fabricio | Dev</title>
 </head>
+
 <body>
-    <header>
-        <nav></nav>
+    <!--=======================HEADER===============================-->
+    <header class="header" style="box-shadow: 1px  1px 1px #6d4ef7">
+        <nav id="nav" class="nav">
+            <div class="logo">
+                <a href="#home">
+                    <h1>Fabricio <span>Viana</span></h1>
+                </a>
+            </div>
+
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skill">Habilidades</a></li>
+                <li><a href="#project">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span id="bar-rotatey" class="bar"></span>
+                <span id="bar-hidden" class="bar"></span>
+                <span id="bar-rotatex" class="bar"></span>
+            </div>
+        </nav>
     </header>
+
+    <!--=========================CONTENT============================-->
     <main>
-        <section class="home"></section>
-        <section class="about"></section>
-        <section class="skills"></section>
-        <section class="projects"></section>
+        <!--=========================HOME PAGE============================-->
+        <section id="home" class="home">
+            <div class="hero">
+                <img src="./src/assets/img/avatar.png" alt="" id="hero-img">
+            </div>
+            <div class="content-home">
+                <div class="intro">
+                    <h1>Olá, sou o</h1>
+                    <h1 id="hero-name">Fabricio Viana</h1>
+                    <p>Desenvolvedor Front-End</p>
+                </div>
+                <div class="links">
+                    <a id="link-cv" href="./src/assets/cv/fabricioviana.pdf" download>Download Currículo</a>
+                    <a id="link-zap" href="https://wa.me/5585986209984?text=Ol%C3%A1%2C+vim+pelo+seu+portf%C3%B3lio.">Entrar
+                        em Contato</a>
+    
+                </div>
+            </div>
+        </section>
+        <!--=========================ABOUT PAGE=================================-->
+        <section id="about" class="about" data-anime="left">
+            <h1 class="tittle">Sobre <span id="ponto">.</span></h1>
+            <div class="about-container">
+                <div class="card-about" id="about-resume" data-anime="left">
+                    <i class="fa-solid fa-mobile-screen icon"></i>
+                    <h2>Desenvolvimento Mobile</h2>
+                    <p>Lorem ipsum dolor sit  Quasi sint dolor</p>
+                    <div class="more-container">
+                        <p class="more">SAIBA MAIS <i class="fa-solid fa-arrow-right arrow-right"></i></p>
+
+                    </div>
+                </div>
+                <div  id="card-about2" class="card-about" data-anime="left">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Desenvolvimento Web</h2>
+                    <p>Lorem ipsum dolor sit  Quasi sint dolor</p>
+                    <div class="more-container">
+                        <p id="more-2">SAIBA MAIS <i class="fa-solid fa-arrow-right arrow-right"></i></p>
+
+                    </div>
+                </div>
+                <div class="card-about" id="soft-skills" data-anime="left">
+                    <i class="fa-solid fa-pen-ruler icon"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit  Quasi sint dolor</p>
+                    <div class="more-container">
+                        <p class="more">SAIBA MAIS<i class="fa-solid fa-arrow-right arrow-right"></i></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="insights">
+                <div class="tittle-experience">
+                    <h1>02</h1>
+                    <p>Anos de Experiência</p>
+                </div>
+                <div class="cards-container">
+                    <div class="card-content">
+                        <h2>06+</h2>
+                        <p>Clientes</p>
+                    </div>
+                    <div class="card-content">
+                        <h2>02</h2>
+                        <p>Anos de Experiência</p>
+                    </div>
+                    <div class="card-content">
+                        <h2>15+</h2>
+                        <p>Projetos</p>
+                    </div>
+                    <div class="card-content">
+                        <h2>03</h2>
+                        <p>Conquistas</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--=================================SKILLS PAGE=====================================-->
+        <section id="skill" class="skills" data-anime="right">
+            <h1 class="tittle">Habilidades <span id="ponto">.</span></h1>
+            <div class="stack-container">
+                <div class="stack-card">
+                    <h4>HTML<h4>
+                    <i class="devicon-html5-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>CSS</h4>
+                    <i class="devicon-css3-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>JS</h4>
+                    <i class="devicon-javascript-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>React</h4>
+                    <i class="devicon-react-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>SASS</h4>
+                    <i class="devicon-sass-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Bootstrap</h4>
+                    <i class="devicon-bootstrap-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Figma</h4>
+                    <i class="devicon-figma-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Java</h4>
+                    <i class="devicon-java-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Spring</h4>
+                    <i class="devicon-spring-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Python</h4>
+                    <i class="devicon-python-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Django</h4>
+                    <i class="devicon-django-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>PHP</h4>
+                    <i class="devicon-php-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Laravel</h4>
+                    <i class="devicon-laravel-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>MySQL</h4>
+                    <i class="devicon-mysql-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>PostgreSQL</h4>
+                    <i class="devicon-postgresql-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Git</h4>
+                    <i class="devicon-git-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Github</h4>
+                    <i class="devicon-github-plain"></i>
+                </div>
+                <div class="stack-card">
+                    <h4>Gitlab</h4>
+                    <i class="devicon-gitlab-plain"></i>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="project" class="projects" data-anime="left">
+            <h1 class="tittle">Projetos <span id="ponto">.</span></h1>
+            <div class="project-container">
+                <div class="project" >
+                    <div class="project-img">
+                        <img class="img" src="./src/assets/img/project-esteves.PNG" alt="">
+                    </div>
+                    <h3>Portfólio Cristian Steves</h3>
+                    <div class="links-project">
+                        <a href="https://fotografiadebodasesteves.com/" id="link-project">Projeto</a>
+                        <a href="" id="link-github">Repositório</a>
+                    </div>
+                </div>
+                <div class="project" >
+                    <div class="project-img">
+                        <img class="img" src="./src/assets/img/embreve.png" alt="">
+                    </div>
+                    <h3>Project</h3>
+                    <div class="links-project">
+                        <a href="https://fotografiadebodasesteves.com/" id="link-project">Projeto</a>
+                        <a href="" id="link-github">Repositório</a>
+                    </div>
+                </div>
+                <div class="project" >
+                    <div class="project-img">
+                        <img class="img" src="./src/assets/img/embreve.png" alt="">
+                    </div>
+                    <h3>Project</h3>
+                    <div class="links-project">
+                        <a href="https://fotografiadebodasesteves.com/" id="link-project">Projeto</a>
+                        <a href="" id="link-github">Repositório</a>
+                    </div>
+                </div>
+                <div class="project" >
+                    <div class="project-img">
+                        <img class="img" src="./src/assets/img/embreve.png" alt="">
+                    </div>
+                    <h3>Project</h3>
+                    <div class="links-project">
+                        <a href="https://fotografiadebodasesteves.com/" id="link-project">Projeto</a>
+                        <a href="" id="link-github">Repositório</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer>
-        <section class="contacts">
+        <section id="contact" class="contacts" data-anime="right">
+            <h1 class="tittle">Contatos <span id="ponto">.</span></h1>
+            <div class="contact-container">
+                <div class="social-medias" >
+                    <a href="https://wa.me/5585986209984?text=Ol%C3%A1%2C+vim+pelo+seu+portf%C3%B3lio." target="_blank"><i class="fa-brands fa-whatsapp social-footer" target="_blank"></i></a>
+                    <a href="https://www.linkedin.com/in/fabriciosviana/" target="_blank"><i class="fa-brands fa-linkedin-in social-footer"></i></a>
+                    <a href="https://github.com/FabriciosViana" target="_blank"><i class="fa-brands fa-github social-footer" target="_blank"></i></a>
+                </div>
+            </div>
+            <p id="assinatura">Feito com &#128151 por Fabricio Viana</p id="assinatura">
         </section>
     </footer>
+
+    <script src="./src/assets/js/main.js"></script>
 </body>
+
 </html>

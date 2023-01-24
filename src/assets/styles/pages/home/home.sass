@@ -1,0 +1,95 @@
+// @import "../../mixins"
+.home
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    align-items: center
+    background-color: $bg-color
+    color: white
+    height: 100vh
+
+.hero
+    background-image: $gradient-color
+    // padding: 1rem
+    border-radius: 48%
+    height: 25rem
+    border: solid 1px $primary-color
+.hero:hover
+    transform: scale(1.1)
+    transition: .5s
+
+#hero-img
+    width: 100%
+    height: 100%
+    border-radius: 50%
+
+.content-home
+    display: flex
+    flex-direction: column
+    gap: 1.2rem
+    // padding-top: 2rem
+    h1
+        font-family: $font-tittle
+        font-weight: 300
+        font-style: italic
+        font-size: 3rem
+
+    h1#hero-name
+        @include gradient-font($primary-color)
+
+    p
+        font-family: $font-tittle
+        font-weight: 200
+        font-style: italic
+        color: $text-color2
+
+.links
+    display: flex
+    gap: 1rem
+    #link-cv
+        background: $primary-color
+        text-decoration: none
+        color: $text-color
+        padding: .6rem
+        border-radius: 1rem
+    #link-cv:hover
+        transform: scale(1.1)
+        transition: .5s
+
+    #link-zap
+        text-decoration: none
+        color: $text-color
+        border: solid 1px $primary-color
+        padding: .6rem
+        border-radius: 1rem
+
+    a#link-zap:hover
+        background: $primary-color
+        transition: .5s
+        transform: scale(1.1)
+
+@media ( max-width: 609px)
+    .hero
+        height: 15rem
+
+@media (max-width: 500px)
+    .home
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+@media (max-width: 325px)
+    .content-home
+        h1
+            font-size: 2rem
+        p
+            font-size: .8rem
+
+    .links
+        #link-cv
+            padding: .3rem
+            font-size: .8rem
+
+        #link-zap
+            padding: .3rem
+            font-size: .8rem

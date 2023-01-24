@@ -1,0 +1,80 @@
+header  
+    background-color: $bg-color
+    color: white
+    position: fixed
+    width: 100%
+    z-index: 1
+    
+
+.logo
+    font-family: $font-tittle
+    font-style: italic
+    span
+        @include gradient-font($primary-color)
+
+.nav
+    display: flex
+    justify-content: space-between
+    padding: 1.2rem
+    
+    li
+        list-style: none
+    a
+        text-decoration: none
+        color: $text-color
+        font-family: $font-tittle
+        font-weight: $font-wheight3
+    a:hover
+        @include gradient-font($primary-color)
+        transition: 1s
+#menu
+    display: flex
+    gap: 1.5rem
+
+.hamburger
+    display: none
+    cursor: pointer
+    z-index: 2
+
+.bar
+    display: block
+    height: 3px
+    width: 20px
+    border-radius: 2rem
+    background-color: $text-color
+    margin: 4px 0
+    transition: .3s
+    
+
+@media  ( max-width: 600px)
+    .hamburger
+        display: block
+        margin-right: 3rem
+
+    ul#menu
+        display: none
+        position: absolute
+        width: 100%
+        top: 70px
+        right: 0
+        background: $bg-color
+        z-index: 10000
+        text-align: center
+        padding: .5rem
+        li
+            margin-block: 1rem
+            a:hover
+                color: $primary-color
+                transition: 1s
+
+    #nav.active ul#menu
+        display: block
+
+    #nav.active span#bar-hidden
+        opacity: 0
+
+    #nav.active span#bar-rotatey
+        transform: rotate(-45deg) translate(-5px, 5px)
+
+    #nav.active span#bar-rotatex
+        transform: rotate(45deg) translate(-5px, -5px)

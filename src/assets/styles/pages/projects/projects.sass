@@ -1,0 +1,70 @@
+.projects
+    margin-top: 15rem
+    height: 100vh
+    h3
+        color: $text-color
+
+    .project-container
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 1rem 5rem
+        h3
+            font-weight: 300
+            text-align: center
+        .project
+            display: flex
+            flex-direction: column
+            gap: 1rem
+            overflow-y: hidden
+        .project-img
+            background: $bg-color2
+            padding: 1.5rem
+            cursor: pointer
+            width: 100%
+            img
+                width: 22rem
+                height: 100%
+.links-project
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    text-align: center
+
+    a#link-project
+        text-decoration: none
+        background: $primary-color
+        color: $text-color
+        padding: .3rem
+        border-radius: 2rem
+        font-weight: 200
+        width: 100px
+    #link-project:hover
+        transform: scale(1.1)
+        transition: .5s
+.project-container .project .links-project #link-github
+    text-decoration: none
+    border: solid 1px #780aee
+    color: $text-color
+    // background: $primary-color
+    padding: .3rem
+    border-radius: 2rem
+    font-weight: 200
+    width: 100px
+    text-align: center
+.project-container .project .links-project #link-github:hover
+    background: $primary-color
+    transform: scale(1.1)
+    transition: .5s
+
+@media (max-width: 900px)
+    .project .project-img img.img
+        width: 15rem
+@media (max-width: 600px)
+    .projects
+        margin-top: 50rem
+
+@media (max-width: 422px)
+    .project .project-img img.img
+        width: 10rem
+
