@@ -180,7 +180,7 @@ header {
   transform: scale(1.1);
 }
 
-@media (max-width: 609px) {
+@media (max-width: 630px) {
   .hero {
     height: 15rem;
   }
@@ -189,7 +189,7 @@ header {
   .home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 5rem;
   }
 }
 @media (max-width: 325px) {
@@ -511,6 +511,7 @@ html {
 body {
   font-family: "Kanit";
   background: #06050e;
+  overflow-x: hidden;
 }
 
 #ponto {
